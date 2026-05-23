@@ -1,0 +1,51 @@
+CREATIVE BRIEF - Q3 Product Launch
+Prepared by: Product Marketing
+Last Updated: May 15
+
+OVERVIEW
+• New product: CloudSync Pro (enterprise file sharing)
+• Launch date: July 1, 2026
+• Campaign duration: 6 weeks
+
+TARGET AUDIENCE
+• IT decision makers at companies 500+ employees
+• Current users of legacy file sharing (Dropbox Business, Box)
+• Pain point: compliance and security concerns with current solutions
+
+DELIVERABLES
+• Landing page hero (above fold)
+• Email sequence (3 emails: teaser, launch day, follow-up)
+• LinkedIn sponsored posts (3 variations)
+• Google Display ads: 300x250, 728x90, 160x600
+• One 30-second explainer video (motion graphics)
+
+KEY MESSAGES
+• "Enterprise-grade security meets consumer-grade simplicity"
+• SOC 2 Type II certified
+• 99.99% uptime SLA
+• Migrates existing files in under 24 hours
+
+BRAND NOTES
+• Use new brand system (v2 - see Figma link)
+• Primary: #1A1A2E, Secondary: #16213E
+• Font: Inter for headings, system font for body
+• Tone: professional but not stuffy, confident
+
+BUDGET
+• Creative production: $45,000
+• Not including media spend
+
+APPROVALS NEEDED
+• VP Marketing (final creative)
+• Legal (all claims)
+• Security team (product screenshots)
+
+TIMELINE
+• Creative concepts due: June 5
+• Final assets due: June 20
+• Campaign live: July 1
+
+CONTACT
+• Project lead: Amanda Chen (amanda@example.com)
+• Brand review: Tom Walsh
+• Legal: Sarah Kim

@@ -1,0 +1,67 @@
+@channel Need creative for the wellness app partnership - dropping details below
+
+Rachel [10:23 AM]
+So Mindful Health wants co-branded content for their app integration launch. They're providing their brand assets but we own the creative execution.
+
+Rachel [10:24 AM]
+Main deliverable is a set of in-app cards (think notification-style) plus some social to promote the integration
+
+Derek [10:25 AM]
+what sizes for the in-app cards?
+
+Rachel [10:26 AM]
+Let me check... I think it's 343x200 for the main card and 160x160 for the thumbnail. @Lisa can you confirm from the SDK docs?
+
+Lisa [10:31 AM]
+Yes 343x200 main card, 160x160 thumb. Also need a 1024x500 for the feature banner in their app store listing
+
+Rachel [10:32 AM]
+Oh right, forgot about that one. Thanks Lisa
+
+Derek [10:33 AM]
+and social - which platforms?
+
+Rachel [10:34 AM]
+Instagram and TikTok for sure. Maybe Twitter but that's lower priority. Let's focus on IG stories and TikTok feed for now
+
+Marcus [10:36 AM]
+timeline? we're pretty stacked right now
+
+Rachel [10:37 AM]
+They want to announce June 1. So we'd need finals by May 28 ideally? Is that insane?
+
+Marcus [10:37 AM]
+that's next week Rachel
+
+Rachel [10:38 AM]
+I know I know. But the partnership was just signed yesterday. Can we at least get concepts by Thursday?
+
+Derek [10:40 AM]
+what about copy? do we have messaging approved?
+
+Rachel [10:41 AM]
+Mindful Health approved these messages:
+- "Your wellness journey, now integrated with [our brand]"
+- "Track, breathe, achieve - all in one place"
+They want us to pick one as primary
+
+Lisa [10:43 AM]
+do we have their brand guidelines? I need colors and fonts
+
+Rachel [10:44 AM]
+Uploading to the shared drive now. Their primary green is #2ECC71, secondary is #27AE60. Font is Poppins.
+
+Rachel [10:44 AM]
+Oh and important - they specifically said NO stock photos of people meditating. They want abstract/geometric wellness imagery. Very firm on that.
+
+Derek [10:45 AM]
+who's the audience for this?
+
+Rachel [10:46 AM]
+Existing users of both apps, 25-40, health-conscious professionals. The integration targets people who already use our app for productivity and want to add wellness tracking.
+
+Marcus [10:48 AM]
+ok I can probably move some things around. @Rachel put all this in a brief doc though? hard to work from a slack thread
+
+Rachel [10:49 AM]
+lol that's fair. Will do today. But this is basically everything

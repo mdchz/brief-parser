@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+video_assets/
+demo_video.mp4
+demo_script.docx
+make_video.py
+generate_video.py
+capture_screenshots.py
+.playwright-mcp/
+*.ts
+*.aiff
