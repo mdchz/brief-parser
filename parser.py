@@ -166,8 +166,10 @@ Your job is to find errors, missed information, and overconfident scores. Be cri
 Only flag real issues. If the extraction is solid, say assessment: "pass" with empty corrections."""
 
 
-def parse_brief(brief_text: str, use_review=True) -> dict:
+def parse_brief(brief_text: str, use_review=True, on_status=None) -> dict:
     """Extract requirements with optional agent review loop."""
+    if on_status:
+        on_status("Pass 1: Extracting requirements...")
     # Pass 1: Extract
     response = client.messages.create(
         model="us.anthropic.claude-sonnet-4-6",
@@ -197,6 +199,8 @@ def parse_brief(brief_text: str, use_review=True) -> dict:
         return extraction
 
     # Pass 2: Review agent evaluates the extraction
+    if on_status:
+        on_status("Pass 2: Review agent critiquing extraction...")
     review_response = client.messages.create(
         model="us.anthropic.claude-sonnet-4-6",
         max_tokens=4096,

@@ -467,7 +467,11 @@ with col_input:
             try:
                 from docx import Document
                 doc = Document(uploaded_file)
-                brief_text = "\n".join(p.text for p in doc.paragraphs)
+                parts = [p.text for p in doc.paragraphs]
+                for table in doc.tables:
+                    for row in table.rows:
+                        parts.append(" | ".join(cell.text for cell in row.cells))
+                brief_text = "\n".join(parts)
             except Exception as e:
                 st.error(f"Error reading DOCX: {e}")
         elif uploaded_file.type in ("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.ms-excel") or uploaded_file.name.endswith((".xlsx", ".xls")):
@@ -486,17 +490,15 @@ with col_input:
 
 with col_output:
     if parse_clicked and brief_text.strip():
-        with st.spinner(""):
-            st.markdown("""
-                <div style="text-align: center; padding: 3rem 0; color: var(--text-dim);">
-                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem; opacity: 0.7;">&#9889;</div>
-                    <div style="font-size: 0.85rem; font-weight: 500; color: var(--text-secondary);">Analyzing brief with Claude...</div>
-                    <div style="font-size: 0.72rem; margin-top: 0.3rem; color: var(--text-dim);">Extracting requirements, flagging ambiguities</div>
-                </div>
-            """, unsafe_allow_html=True)
-            start_time = time.time()
-            result = parse_brief(brief_text)
-            elapsed = time.time() - start_time
+        if len(brief_text.strip()) < 20:
+            st.warning("Brief seems too short. Please paste a more complete brief.")
+        else:
+            with st.status("Parsing brief with Claude...", expanded=True) as status:
+                st.write("Pass 1: Extracting structured requirements...")
+                start_time = time.time()
+                result = parse_brief(brief_text, on_status=lambda msg: st.write(msg))
+                elapsed = time.time() - start_time
+                status.update(label=f"Done in {elapsed:.1f}s", state="complete", expanded=False)
             st.session_state["result"] = result
             st.session_state["elapsed"] = elapsed
             st.rerun()
