@@ -96,13 +96,13 @@ Your job is to parse messy, informal, or scattered brief content and extract eve
 
 1. Extract ALL requirements mentioned, even if buried in casual language
 2. Infer reasonable values when strongly implied (mark confidence as "medium")
-3. Flag anything ambiguous or missing as an "ambiguity" that needs clarification
+3. Flag ambiguities that would BLOCK a designer from starting or cause rework if guessed wrong
 4. Assign confidence levels to each field:
    - "high": explicitly stated in the brief
    - "medium": strongly implied or inferred from context
    - "low": guessed or partially specified
 
-Be thorough with ambiguities — these save the creative team from having to go back and ask questions later. Think about what a designer would need to know that isn't clearly stated."""
+For ambiguities: only include questions where the answer would change what gets produced. Limit to 5-8 high-impact questions. Skip nice-to-knows. A good ambiguity is one that, if unresolved, would send a designer back to redo work."""
 
 
 REVIEW_TOOL = {
@@ -160,8 +160,9 @@ REVIEW_SYSTEM = """You are a quality reviewer for creative brief extractions. Yo
 Your job is to find errors, missed information, and overconfident scores. Be critical. Check:
 - Are any extracted values wrong or incomplete?
 - Are confidence scores too high for vague or ambiguous information?
-- Did the first pass miss any ambiguities a designer would care about?
 - Are deliverables complete — did it miss any implied items?
+
+For missed_ambiguities: only add questions that would block production or cause rework. Do NOT pad the list. If the extraction already has good ambiguities, return an empty list. The total ambiguity count should stay between 5-8 high-impact questions.
 
 Only flag real issues. If the extraction is solid, say assessment: "pass" with empty corrections."""
 
